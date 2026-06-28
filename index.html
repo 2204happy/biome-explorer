@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Biome Explorer</title>
+  </head>
+  <body onload="init()">
+    <h1>Biome Explorer :)</h1>
+    <table>
+    <tr>
+    <td>
+    <p id="temperatureDisplay"></p><input type="range" min="-1" max="1" value="0" step="0.01" class="slider" id="temperature" oninput="updateBiomeDisplay()"><br>
+    <p id="humidityDisplay"></p><input type="range" min="-1" max="1" value="0" step="0.01" class="slider" id="humidity" oninput="updateBiomeDisplay()"><br>
+    <p id="continentalnessDisplay"></p><input type="range" min="-1.2" max="1" value="0" step="0.01" class="slider" id="continentalness" oninput="updateBiomeDisplay()"><br>
+    <p id="erosionDisplay"></p><input type="range" min="-1" max="1" value="0" step="0.01" class="slider" id="erosion" oninput="updateBiomeDisplay()"><br>
+    <p id="weirdnessDisplay"></p><input type="range" min="-1.1" max="1.1" value="0" step="0.01" class="slider" id="weirdness" oninput="updateBiomeDisplay()"><br>
+    <p id="depthDisplay"></p><input type="range" min="0" max="1" value="0" step="0.01" class="slider" id="depth" oninput="updateBiomeDisplay()">
+    </td>
+    <td>
+    <p id="biomeName"></p>
+    <p id="params"></p>
+    </td>
+    <td>
+    <img id="biomeImage" style="height: 75vh; width: auto;">
+    </td>
+    </tr>
+    </table>
+    <script src="biomegen.js"></script>
+  </body>
+</html>
