@@ -389,7 +389,7 @@ function updateBiomeDisplay() {
         `Y-Level: ${(64-128*params.depth).toFixed(0)}`;
 
     const biome = getBiome(params);
-    document.getElementById("biomeName").innerHTML = biome;
+    document.getElementById("biomeName").innerHTML = `<b>${biome}</b>`;
 
     document.getElementById("biomeImage").src = getBiomeImageURL(biome);
 }
