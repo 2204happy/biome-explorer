@@ -385,8 +385,7 @@ function updateBiomeDisplay() {
         `Erosion: ${params.erosion}<br>`+
         `Weirdness: ${params.weirdness >= 0 ? "Positive" : "Negative"}<br>`+
         `Peaks and Valleys (PV): ${pvNames[params.pv]} (${params.pv})<br>`+
-        `PV (raw): ${params.rawPV.toFixed(2)}<br>`+
-        `Y-Level: ${(64-128*params.depth).toFixed(0)}`;
+        `PV (raw): ${params.rawPV.toFixed(2)}`;
 
     const biome = getBiome(params);
     document.getElementById("biomeName").innerHTML = `<b>${biome}</b>`;
