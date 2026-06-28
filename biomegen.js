@@ -82,7 +82,7 @@ const caveRules = [
 
 const oceans =  [
     ["Deep Frozen Ocean","Deep Cold Ocean","Deep Ocean","Deep Lukewarm Ocean","Warm Ocean"],
-    ["Frozen Ocean","Cold Ocean","Ocean","Lukewarm Ocean","Ocean"]
+    ["Frozen Ocean","Cold Ocean","Ocean","Lukewarm Ocean","Warm Ocean"]
 ];
 
 const middleBiomeMatrix = [
